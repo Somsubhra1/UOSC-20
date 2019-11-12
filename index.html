@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UOSC</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Francois+One"
+      rel="stylesheet"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/register.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header" class="alt">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="images/ureckon_white.svg" height="50px" alt=""/>
+          <span></span
+        ></a>
+      </div>
+      <a href="#menu">Menu</a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#three">Register</a></li>
+      </ul>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner full">
+      <article>
+        <img src="images/slide01.jpg" alt="" />
+        <div class="inner">
+          <header>
+            <p>
+              A free responsive web site template by
+              <a href="https://templated.co">TEMPLATED</a>
+            </p>
+            <h2>Hielo</h2>
+          </header>
+        </div>
+      </article>
+      <article>
+        <img src="images/slide02.jpg" alt="" />
+        <div class="inner">
+          <header>
+            <p>Lorem ipsum dolor sit amet nullam feugiat</p>
+            <h2>Magna etiam</h2>
+          </header>
+        </div>
+      </article>
+      <article>
+        <img src="images/slide03.jpg" alt="" />
+        <div class="inner">
+          <header>
+            <p>Sed cursus aliuam veroeros lorem ipsum nullam</p>
+            <h2>Tempus dolor</h2>
+          </header>
+        </div>
+      </article>
+      <article>
+        <img src="images/slide04.jpg" alt="" />
+        <div class="inner">
+          <header>
+            <p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
+            <h2>Etiam feugiat</h2>
+          </header>
+        </div>
+      </article>
+      <article>
+        <img src="images/slide05.jpg" alt="" />
+        <div class="inner">
+          <header>
+            <p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+            <h2>Lorem adipiscing</h2>
+          </header>
+        </div>
+      </article>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="wrapper style2">
+      <div class="inner">
+        <div class="grid-style">
+          <div>
+            <div class="box">
+              <div class="image fit">
+                <img src="images/coding_bg.jpeg" alt="" />
+              </div>
+              <div class="content">
+                <header class="align-center">
+                  <h2>CodeWise</h2>
+                </header>
+                <p>
+                  Why should college students have all the fun? School students
+                  of all ages have a platform to showcase their coding prowess.
+                </p>
+                <footer class="align-center">
+                  <a href="#" class="button alt">Problem Statement</a>
+                  <a href="#three" class="button alt">Register</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="box">
+              <div class="image fit">
+                <img src="images/coding_bg.jpeg" alt="" />
+              </div>
+              <div class="content">
+                <header class="align-center">
+                  <h2>Event 2</h2>
+                </header>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
+                  corrupti eos, modi error molestias quod.
+                </p>
+                <footer class="align-center">
+                  <a href="#" class="button alt">Problem Statement</a>
+                  <a href="#three" class="button alt">Register</a>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="wrapper style2">
+      <div class="inner">
+        <header class="align-center">
+          <h2 style="font-family: Montserrat-Black; font-size: 3em;">Register</h2>
+        </header>
+        <div class="container jumbotron mx-auto mt-4 animated zoomIn">
+          <div
+            class="text-center alert alert-success"
+            id="alertSuccess"
+            role="alert"
+          >
+            <h5>Details submitted successfully</h5>
+          </div>
+          <!-- Start of form -->
+          <form
+            method="POST"
+            id="registrationForm"
+            class="contact100-form validate-form"
+          >
+            <h5 class="mb-4 ml-2">Basic Details&#58;</h5>
+            <div
+              class="form-group wrap-input100 validate-input bg1"
+              data-validate="Please Enter Team Name"
+            >
+              <label class="label-input100">Team Name</label>
+              <input
+                type="text"
+                name="team"
+                class="form-control input100"
+                id="teamName"
+                placeholder="Enter your Team Name"
+                required
+              />
+            </div>
+            <div
+              class="form-group wrap-input100 validate-input bg1"
+              data-validate="Please Enter School Name"
+            >
+              <label class="label-input100">School Name</label>
+              <input
+                type="text"
+                name="school"
+                class="form-control input100"
+                id="schoolName"
+                placeholder="Enter your School Name"
+                required
+              />
+            </div>
+            <div class="form-group wrap-input100 validate-input bg1">
+              <label class="label-input100">Select Event</label>
+              <select
+                name="eventSelector"
+                class="form-control js-select2 select2-hidden-accessible"
+                tabindex="-1"
+                aria-hidden="true"
+                id="events"
+                onchange="eventSelected(this)"
+              >
+                <option value="ps">Please Select</option>
+                <option value="coding">CodeWise &#40;3 Members&#41;</option>
+                <option value="quiz">UreckQuiz &#40;3 Members&#41;</option>
+                <option value="model">Model Making &#40;5 Members&#41;</option>
+              </select>
+            </div>
+            <div id="member1" class="mt-4">
+              <h5>Member 1 &#40;Team Leader&#41; Details&#58;</h5>
+              <div
+                class="form-group mt-3 wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 1's Name"
+              >
+                <label class="label-input100">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control input100"
+                  id="member1-name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 1's Class"
+              >
+                <label class="label-input100">Class</label>
+                <input
+                  type="text"
+                  name="class"
+                  class="form-control input100"
+                  id="member1-class"
+                  placeholder="Enter your class"
+                  required
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 1's Contact Number"
+              >
+                <label class="label-input100">Contact Number</label>
+                <input
+                  type="text"
+                  name="contactnumber"
+                  class="form-control input100"
+                  id="member1-contact"
+                  placeholder="Enter your contact number"
+                  required
+                />
+              </div>
+            </div>
+            <div id="member2" class="mt-4">
+              <h5>Member 2 Details&#58;</h5>
+              <div
+                class="form-group mt-3 wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 2's Name"
+              >
+                <label class="label-input100">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control input100"
+                  id="member2-name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 2's Class"
+              >
+                <label class="label-input100">Class</label>
+                <input
+                  type="text"
+                  name="class"
+                  class="form-control input100"
+                  id="member2-class"
+                  placeholder="Enter your class"
+                  required
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 2's Contact Number"
+              >
+                <label class="label-input100">Contact Number</label>
+                <input
+                  type="text"
+                  name="contactnumber"
+                  class="form-control input100"
+                  id="member2-contact"
+                  placeholder="Enter your contact number"
+                  required
+                />
+              </div>
+            </div>
+            <div id="member3" class="mt-4">
+              <h5>Member 3 Details&#58;</h5>
+              <div
+                class="form-group mt-3 wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 3's Name"
+              >
+                <label class="label-input100">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control input100"
+                  id="member3-name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 3's Class"
+              >
+                <label class="label-input100">Class</label>
+                <input
+                  type="text"
+                  name="class"
+                  class="form-control input100"
+                  id="member3-class"
+                  placeholder="Enter your class"
+                  required
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 3's Contact Number"
+              >
+                <label class="label-input100">Contact Number</label>
+                <input
+                  type="text"
+                  name="contactnumber"
+                  class="form-control input100"
+                  id="member3-contact"
+                  placeholder="Enter your contact number"
+                  required
+                />
+              </div>
+            </div>
+            <div id="member4" class="mt-4">
+              <h5>Member 4 Details&#58;</h5>
+              <div
+                class="form-group mt-3 wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 4's Name"
+              >
+                <label class="label-input100">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control input100"
+                  id="member4-name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 4's Class"
+              >
+                <label class="label-input100">Class</label>
+                <input
+                  type="text"
+                  name="class"
+                  class="form-control input100"
+                  id="member4-class"
+                  placeholder="Enter your class"
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 4's Contact Number"
+              >
+                <label class="label-input100">Contact Number</label>
+                <input
+                  type="text"
+                  name="contactnumber"
+                  class="form-control input100"
+                  id="member4-contact"
+                  placeholder="Enter your contact number"
+                />
+              </div>
+            </div>
+            <div id="member5" class="mt-4">
+              <h5>Member 5 Details&#58;</h5>
+              <div
+                class="form-group mt-3 wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 5's Name"
+              >
+                <label class="label-input100">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control input100"
+                  id="member5-name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 5's Class"
+              >
+                <label class="label-input100">Class</label>
+                <input
+                  type="text"
+                  name="class"
+                  class="form-control input100"
+                  id="member5-class"
+                  placeholder="Enter your class"
+                />
+              </div>
+              <div
+                class="form-group wrap-input100 validate-input bg1"
+                data-validate="Please Enter Member 5's Contact Number"
+              >
+                <label class="label-input100">Contact Number</label>
+                <input
+                  type="text"
+                  name="contactnumber"
+                  class="form-control input100"
+                  id="member5-contact"
+                  placeholder="Enter your contact number"
+                />
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="mt-4 btn btn-primary btn-lg text-center mx-auto contact100-form-btn"
+            >
+              Submit <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </form>
+          <!-- End of Form -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-facebook"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-envelope-o"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        &copy; Ureckon 2020. All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- form Validation script -->
+    <script src="assets/js/validate.js"></script>
+    <!-- Registration script -->
+    <script src="assets/js/register.js"></script>
+  </body>
+</html>
