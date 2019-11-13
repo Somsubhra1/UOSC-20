@@ -203,7 +203,7 @@ var settings = {
 					// Indicators.
 						if (options.indicators) {
 
-							var $indicator_li = $('<li>' + (parseInt(i)  + 1).toString() + '</li>').appendTo($indicators);
+							var $indicator_li = $('<li>' + '</li>').appendTo($indicators);
 
 							// Indicator.
 								$indicator_li

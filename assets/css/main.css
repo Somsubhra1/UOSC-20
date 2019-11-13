@@ -4294,3 +4294,9 @@
 		font-size: 0.6em !important;
 	}
 }
+
+@media screen and (max-width: 410px) {
+	.register-btn {
+		margin-top: 10px;
+	}
+}
