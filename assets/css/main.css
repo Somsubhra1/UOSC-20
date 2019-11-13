@@ -4199,7 +4199,7 @@
 
 			.banner.full {
 				padding: 0;
-				min-height: 50vh;
+				/* min-height: 50vh; */
 				height: 50vh !important;
 			}
 
@@ -4228,6 +4228,7 @@
 		body.is-mobile .banner > article {
 			background-attachment: scroll;
 		}
+
 
 /* Main */
 
@@ -4278,5 +4279,18 @@
 @media screen and (max-width: 1000px) {
 	.banner > article h2 {
 		font-size: 2em;
+	}
+}
+
+.logo > a > img {
+	height: 55px;
+}
+
+@media screen and (max-width: 700px) {
+	.logo > a > img {
+		height: 40px;
+	}
+	a.h3 {
+		font-size: 0.6em !important;
 	}
 }

@@ -131,3 +131,12 @@ select {
     margin-top: -50px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .banner-event-btn {
+    margin-top: 40px !important;
+  }
+  .banner-register-btn {
+    margin-top: 30px !important;
+  }
+}
