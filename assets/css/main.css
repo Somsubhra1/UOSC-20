@@ -4372,3 +4372,9 @@
 		margin-bottom: 1.5em !important; 
 	}
 }
+
+@media screen and (max-width: 700px) {
+	.menu-icon {
+		margin-top: -6px;
+	}
+}
