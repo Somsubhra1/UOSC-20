@@ -3929,7 +3929,7 @@
 			}
 
 			#menu .close:hover {
-				color: #000;
+				color: #fff;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -4397,8 +4397,15 @@ h2.my-5 {
 	font-family: inherit;
 }
 
+.jumbotron {
+	max-width: 1500px;
+}
+
 @media screen and (max-width: 700px) {
 	.event-writeup, .sub-desc, .ps-btn, .register-btn {
 		font-size: 1em !important;
+	}
+	.jumbotron {
+		max-width: 2000px;
 	}
 }
