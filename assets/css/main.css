@@ -4387,3 +4387,18 @@
 a:hover {
 	text-decoration: none !important;
 }
+
+.event-writeup, .sub-desc {
+	font-family: inherit;
+	font-size: 1.2em;
+}
+
+h2.my-5 {
+	font-family: inherit;
+}
+
+@media screen and (max-width: 700px) {
+	.event-writeup, .sub-desc, .ps-btn, .register-btn {
+		font-size: 1em !important;
+	}
+}
