@@ -4401,11 +4401,18 @@ h2.my-5 {
 	max-width: 1500px;
 }
 
+.ps-btn {
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 700px) {
 	.event-writeup, .sub-desc {
 		font-size: 1em !important;
 	}
 	.jumbotron {
 		max-width: 2000px;
+	}
+	.ps-btn {
+		margin-right: 0px;
 	}
 }
