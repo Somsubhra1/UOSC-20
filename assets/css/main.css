@@ -4402,7 +4402,7 @@ h2.my-5 {
 }
 
 @media screen and (max-width: 700px) {
-	.event-writeup, .sub-desc, .ps-btn, .register-btn {
+	.event-writeup, .sub-desc {
 		font-size: 1em !important;
 	}
 	.jumbotron {
