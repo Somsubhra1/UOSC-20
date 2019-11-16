@@ -50,7 +50,7 @@
     <nav id="menu">
       <ul class="links">
         <li><a href="#">Home</a></li>
-        <li><a href="#one">Events</a></li>
+        <li><a href="#events">Events</a></li>
         <li><a href="#three">Register</a></li>
       </ul>
     </nav>
@@ -72,7 +72,7 @@
               />
             </h2>
             <h2 class="hero-text"><span class="first-letter">U</span>reckon <span class="first-letter">O</span>pen <span class="first-letter">S</span>chool <span class="first-letter">C</span>hallenge</h2>
-            <a href="#one" class="btnx fourth hero-btn">Events</a>
+            <a href="#events" class="btnx fourth hero-btn">Events</a>
             <a href="#three" class="btnx second hero-btn">Register</a>
           </header>
         </div>
@@ -135,7 +135,7 @@
 
     <!-- One -->
     <section id="one" class="wrapper style2">
-      <div class="inner">
+      <div class="inner" id="sub-head">
         <h5 class="text-center text-dark mb-4 sub-desc">
           "The dates are near" says the calendar for URECKON to commence. Miss
           not the golden opportunity of ruling the event like a boss and win the
@@ -152,6 +152,7 @@
           <h2
             style="font-size: 3em; margin-bottom: 1.2em; font-family: Gotham-Bold;"
             class="my-5"
+            id="events"
           >
             Events
           </h2>
@@ -246,7 +247,7 @@
     <!-- Three -->
     <section id="three" class="wrapper style2">
       <hr>
-      <div class="inner">
+      <div class="inner" id="register-section">
         <header class="align-center">
           <h2 class="my-5" style="font-family: Gotham-Bold; font-size: 3em;">
             Register
@@ -540,7 +541,7 @@
 
     <!-- Footer -->
     <footer class="ftco-footer ftco-section p-5 text-white">
-      <div class="container">
+      <div class="container" id="footer-container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
@@ -619,6 +620,13 @@
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/skel.min.js"></script>
     <script src="assets/js/util.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+      ScrollReveal().reveal('#sub-head', {delay: 100, distance: '200px', duration: 1000});
+      ScrollReveal().reveal('.grid-style', {delay: 100, distance: '200px', duration: 1000});
+      ScrollReveal().reveal('#register-section', {delay: 100, distance: '200px', duration: 1000});
+      ScrollReveal().reveal('#footer-container', {delay: 100, distance: '200px', duration: 1000});
+    </script>
     <!-- Main Script -->
     <script src="assets/js/main.js"></script>
     <!-- form Validation script -->
