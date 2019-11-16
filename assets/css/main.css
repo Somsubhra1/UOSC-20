@@ -4437,3 +4437,13 @@ h2.my-5 {
 .image > img {
 	height: 350px;
 }
+
+@media screen and (min-width: 750px) and (max-width: 1300px) {
+	.banner > article h2 {
+		font-size: 2em;
+	}
+
+	.banner > article p {
+		font-size: 0.5em;
+	}
+}
