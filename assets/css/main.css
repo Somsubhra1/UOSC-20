@@ -4447,3 +4447,9 @@ h2.my-5 {
 		font-size: 0.5em;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	footer {
+		margin-left: -30px;
+	}
+}
