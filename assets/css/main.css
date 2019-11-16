@@ -4449,7 +4449,7 @@ h2.my-5 {
 }
 
 @media screen and (max-width: 400px) {
-	footer {
+	.ftco-footer {
 		margin-left: -30px;
 	}
 }
