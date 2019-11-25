@@ -262,7 +262,7 @@
             <h5>Details submitted successfully</h5>
           </div>
           <!-- Start of form -->
-          <form id="registrationForm" class="contact100-form validate-form">
+          <form id="registrationForm" class="contact100-form validate-form" onsubmit="submitForm()">
             <h5 class="mb-4 ml-2">Basic Details&#58;</h5>
             <div
               class="form-group wrap-input100 validate-input bg1"
@@ -299,7 +299,7 @@
                 class="form-control js-select2 select2-hidden-accessible"
                 tabindex="-1"
                 aria-hidden="true"
-                id="events"
+                id="event"
                 onchange="eventSelected(this)"
               >
                 <option value="ps">Please Select</option>
@@ -634,5 +634,73 @@
     <script src="assets/js/validate.js"></script>
     <!-- Registration script -->
     <script src="assets/js/register.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDOjV6sIfLBdCYFOK5RfmfG0thLJ2s7StQ",
+        authDomain: "ureckon-uosc.firebaseapp.com",
+        databaseURL: "https://ureckon-uosc.firebaseio.com",
+        projectId: "ureckon-uosc",
+        storageBucket: "ureckon-uosc.appspot.com",
+        messagingSenderId: "698426659316",
+        appId: "1:698426659316:web:db50bef8baf6e755ce69a1",
+        measurementId: "G-372FSEVJZ1"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      this.database = firebase.database();
+      function submitForm()
+      {
+        let teamName = document.getElementById('teamName').value;
+        let school = document.getElementById('school').value;
+        let event = document.getElementById('event').value;
+        let member1_name = document.getElementById('member1-name').value;
+        let member1_class = document.getElementById('member1-class').value;
+        let member1_contact = document.getElementById('member1-contact').value;
+        let member2_name = document.getElementById('member2-name').value;
+        let member2_class = document.getElementById('member2-class').value;
+        let member2_contact = document.getElementById('member2-contact').value;
+        let member3_name = document.getElementById('member3-name').value;
+        let member3_class = document.getElementById('member3-class').value;
+        let member3_contact = document.getElementById('member3-contact').value;
+        let member4_name = document.getElementById('member4-name').value;
+        let member4_class = document.getElementById('member4-class').value;
+        let member4_contact = document.getElementById('member4-contact').value;
+        let saveJSON = {
+          team: teamName,
+          school: school,
+          event: event,
+          member_1_name: member1_name,
+          member_1_class: member1_class,
+          member_1_contact: member1_contact,
+          member_2_name: member2_name,
+          member_2_class: member2_class,
+          member_2_contact: member2_contact,
+          member_3_name: member3_name,
+          member_3_class: member3_class,
+          member_3_contact: member3_contact,
+          member_4_name: member4_name,
+          member_4_class: member4_class,
+          member_4_contact: member4_contact,
+        };
+        const firebaseRef = this.database.ref();
+        firebaseRef.push().set(saveJSON);
+        alert("You will be contacted shortly !");
+      }
+
+    </script>
+
   </body>
 </html>
