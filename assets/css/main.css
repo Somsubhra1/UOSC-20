@@ -4462,3 +4462,7 @@ h2.my-5 {
 .credit-link:hover {
 	color: #fff;
 }
+
+html {
+	scroll-behavior: smooth;
+}
