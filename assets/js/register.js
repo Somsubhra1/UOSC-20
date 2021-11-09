@@ -139,6 +139,10 @@ function submitted(e) {
       console.log(response)
 
       // Clearing form state
+      member1.style.display = 'none'
+      member2.style.display = 'none'
+      member3.style.display = 'none'
+      member4.style.display = 'none'
       document.getElementById('registrationForm').reset()
 
       // scroll to element
