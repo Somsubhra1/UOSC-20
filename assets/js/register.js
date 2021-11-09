@@ -14,6 +14,10 @@ document
   .getElementById('registrationForm')
   .addEventListener('submit', submitted)
 
+// UOSC Team Registration API
+
+const baseURL = 'https://ureckon-api-dev-spn77.ondigitalocean.app/uosc'
+
 function eventSelected(event) {
   if (event.value === 'coding') {
     member1.style.display = 'block'
@@ -94,7 +98,7 @@ function submitted(e) {
   let member4_class = document.getElementById('member4-class').value
   let member4_contact = document.getElementById('member4-contact').value
 
-  fetch('https://ureckon-api-dev-spn77.ondigitalocean.app/uosc', {
+  fetch(baseURL, {
     method: 'POST',
     mode: 'cors',
     cache: 'no-cache',
@@ -133,6 +137,11 @@ function submitted(e) {
   })
     .then((response) => {
       console.log(response)
+
+      // Clearing form state
+      document.getElementById('registrationForm').reset()
+
+      // alert condition
       if (response.ok) {
         // display success alert for 3 seconds
         document.getElementById('alertSuccess').style.display = 'block'
