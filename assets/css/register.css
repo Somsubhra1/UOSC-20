@@ -58,6 +58,11 @@ hr {
   display: none;
   border-radius: 20px;
 }
+.alert-failure {
+  display: none;
+  border-radius: 20px;
+  padding: 1rem;
+}
 .head {
   margin-top: 7rem;
   font-size: 4.1rem;
