@@ -141,11 +141,13 @@ function submitted(e) {
       // Clearing form state
       document.getElementById('registrationForm').reset()
 
+      // scroll to element
+      document.getElementById('register-section').scrollIntoView()
+
       // alert condition
       if (response.ok) {
         // display success alert for 3 seconds
         document.getElementById('alertSuccess').style.display = 'block'
-        window.scrollTo(0, document.body.scrollHeight)
 
         setTimeout(() => {
           document.getElementById('alertSuccess').style.display = 'none'
@@ -160,7 +162,6 @@ function submitted(e) {
         return response.json()
       } else {
         document.getElementById('alertFailure').style.display = 'block'
-        window.scrollTo(0, document.body.scrollHeight)
 
         setTimeout(() => {
           document.getElementById('alertFailure').style.display = 'none'
