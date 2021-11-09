@@ -138,13 +138,6 @@ function submitted(e) {
     .then((response) => {
       console.log(response)
 
-      // Clearing form state
-      member1.style.display = 'none'
-      member2.style.display = 'none'
-      member3.style.display = 'none'
-      member4.style.display = 'none'
-      document.getElementById('registrationForm').reset()
-
       // scroll to element
       document.getElementById('register-section').scrollIntoView()
 
@@ -152,6 +145,13 @@ function submitted(e) {
       if (response.ok) {
         // display success alert for 3 seconds
         document.getElementById('alertSuccess').style.display = 'block'
+
+        // Clearing form state
+        member1.style.display = 'none'
+        member2.style.display = 'none'
+        member3.style.display = 'none'
+        member4.style.display = 'none'
+        document.getElementById('registrationForm').reset()
 
         setTimeout(() => {
           document.getElementById('alertSuccess').style.display = 'none'
