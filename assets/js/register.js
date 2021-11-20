@@ -1,3 +1,5 @@
+const baseURL = 'https://ureckon-api-dev-spn77.ondigitalocean.app'
+
 var member1 = document.getElementById('member1')
 var member2 = document.getElementById('member2')
 var member3 = document.getElementById('member3')
@@ -16,7 +18,6 @@ document
 
 // UOSC Team Registration API
 
-const baseURL = 'https://ureckon-api-dev-spn77.ondigitalocean.app/uosc'
 
 function eventSelected(event) {
   if (event.value === 'coding') {
@@ -98,7 +99,7 @@ function submitted(e) {
   let member4_class = document.getElementById('member4-class').value
   let member4_contact = document.getElementById('member4-contact').value
 
-  fetch(baseURL, {
+  fetch(`${baseURL}/uosc`, {
     method: 'POST',
     mode: 'cors',
     cache: 'no-cache',
