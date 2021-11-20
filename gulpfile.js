@@ -9,6 +9,10 @@ function minifyImages() {
   return gulp
     .src("images/**/*")
     .pipe(imagemin())
+    .on("error", (err) => {
+      console.log("Errored:", err.fileName);
+      gulp.src(err.fileName).pipe(gulp.dest("build/images"));
+    })
     .pipe(gulp.dest("build/images"));
 }
 
