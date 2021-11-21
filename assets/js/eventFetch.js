@@ -1,30 +1,6 @@
 const uoscEvents = document.querySelector("#uoscEvents");
 const eventDropDown = document.querySelector("#event");
 
-// category: "6198ad9dc084850023d6bfa7"
-// code: "uosc-cluex"
-// coordinators: Array(2)
-// 0:
-// email: "das.somsubhra1@gmail.com"
-// name: "Somsubhra Das"
-// phone: "09163975225"
-// _id: "6198ae21c084850023d6bfad"
-// [[Prototype]]: Object
-// 1:
-// email: "somsubhradas.uemk@gmail.com"
-// name: "Somsubhra Das"
-// phone: "09163975225"
-// _id: "6198ae21c084850023d6bfae"
-// [[Prototype]]: Object
-// length: 2
-// [[Prototype]]: Array(0)
-
-// maxParticipants: 5
-// minParticipants: 2
-
-// __v: 0
-// _id: "6198ae21c084850023d6bfac"
-
 function getCoordinators(coordinators) {
   return coordinators
     .map(
