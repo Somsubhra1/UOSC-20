@@ -40,7 +40,7 @@ function getContent(events) {
               </header>
               <p class="event-writeup">
                 ${event.description} <br /><br/>
-                <strong style="color:gray"> Click on the registration link and bang on!</strong> <br />
+                <strong style="color:gray">Have more questions? Please contact:</strong> <br />
               </p>
               <ul class="text-dark">
                 ${getCoordinators(event.coordinators)}
