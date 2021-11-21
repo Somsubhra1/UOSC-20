@@ -8,15 +8,16 @@ function getCoordinators(coordinators) {
         `
         <li class="mb-2">
           <span>
-            <strong>${coordinator.name}</strong>:
+            <strong >${coordinator.name}</strong>:
 
             <a href="tel:${coordinator.phone}" class="text-dark" >
-            <img src="https://ureckon-21.herokuapp.com/assets/events/phone.svg" style="height: 1.2rem;width: 1rem;" alt="email/>
+            <img src="https://ureckon-21.herokuapp.com/assets/events/phone.svg" style="height: 2rem;width: 1.6rem;margin:auto auto auto 0.6rem" alt="email/>
             </a>
             
             <a href="mailto:${coordinator.email}" class="text-dark">
-            <img src="https://ureckon-21.herokuapp.com/assets/events/email.svg" style="height: 1.2rem;width: 1rem;" alt="tel"/>
+            <img src="https://ureckon-21.herokuapp.com/assets/events/email.svg" style="height: 2rem;width: 2rem;margin:auto auto auto 1.6rem" alt="tel"/>
             </a>
+            <br/> 
             </span>
         </li>
         `
