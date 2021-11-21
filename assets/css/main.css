@@ -3877,6 +3877,9 @@
 						line-height: 3.5rem;
 						text-decoration: none;
 						text-transform: uppercase;
+						font-family: 'Gotham-Bold';
+						font-size: large;
+						margin-top: 1.5rem;
 					}
 
 						#menu > ul.links > li > a:not(.button):hover {
