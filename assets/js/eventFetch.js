@@ -11,11 +11,11 @@ function getCoordinators(coordinators) {
             <strong >${coordinator.name}</strong>:
 
             <a href="tel:${coordinator.phone}" class="text-dark" >
-            <img src="https://ureckon-21.herokuapp.com/assets/events/phone.svg" style="height: 2rem;width: 1.6rem;margin:auto auto auto 0.6rem" alt="email/>
+            <img src="https://ureckon-21.herokuapp.com/assets/events/phone.svg" style="height: 2rem;width: 1.6rem;margin:auto auto auto 0.6rem" alt="tel"/>
             </a>
             
             <a href="mailto:${coordinator.email}" class="text-dark">
-            <img src="https://ureckon-21.herokuapp.com/assets/events/email.svg" style="height: 2rem;width: 2rem;margin:auto auto auto 1.6rem" alt="tel"/>
+            <img src="https://ureckon-21.herokuapp.com/assets/events/email.svg" style="height: 2rem;width: 2rem;margin:auto auto auto 1.6rem" alt="email"/>
             </a>
             <br/> 
             </span>
