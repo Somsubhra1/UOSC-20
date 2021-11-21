@@ -8,15 +8,16 @@ function getCoordinators(coordinators) {
         `
         <li class="mb-2">
           <span>
-            ${coordinator.name}
+            <strong >${coordinator.name}</strong>:
 
             <a href="tel:${coordinator.phone}" class="text-dark" >
-            <i class="fas fa-phone-volume mr-2"></i>
+            <img src="https://ureckon-21.herokuapp.com/assets/events/phone.svg" style="height: 2rem;width: 1.6rem;margin:auto auto auto 0.6rem" alt="tel"/>
             </a>
             
-            <a href="mailto:${coordinator.email}" class="text-dark"
-              ><i class="fas fa-envelope mr-2"></i></a>
-            
+            <a href="mailto:${coordinator.email}" class="text-dark">
+            <img src="https://ureckon-21.herokuapp.com/assets/events/email.svg" style="height: 2rem;width: 2rem;margin:auto auto auto 1.6rem" alt="email"/>
+            </a>
+            <br/> 
             </span>
         </li>
         `
@@ -38,8 +39,8 @@ function getContent(events) {
                 <h2>${event.eventName}</h2>
               </header>
               <p class="event-writeup">
-                ${event.description} <br />
-                Click on the registration link and bang on! <br />
+                ${event.description} <br /><br/>
+                <strong style="color:gray">Have more questions? Please contact:</strong> <br />
               </p>
               <ul class="text-dark">
                 ${getCoordinators(event.coordinators)}
@@ -49,14 +50,14 @@ function getContent(events) {
                   target="_blank"
                   href="${event.problemStatement}"
                   class="btn ps-btn btn-lg btn-info"
-                  style="color: #fff"
+                  style="color: #fff ;font-family: 'Gotham-Bold';font-size: medium;"
                   download
                   >Problem Statement</a
                 >
                 <a
                   href="#three"
                   class="btn btn-lg btn-success register-btn"
-                  style="color: #fff"
+                  style="color: #fff ;font-family: 'Gotham-Bold'; font-size: medium;"
                   >Register</a
                 >
               </footer>
