@@ -119,3 +119,5 @@ dist
 
 .vscode/
 .idea/
+build/
+# temp.html

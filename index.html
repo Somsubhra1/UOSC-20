@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Ureckon | UOSC</title>
     <meta charset="utf-8" />
@@ -196,145 +196,7 @@
             Events
           </h2>
         </header>
-        <div class="grid-style">
-          <div>
-            <div class="box">
-              <div class="image fit">
-                <img src="images/urecka.jpg" height="313" alt="" />
-              </div>
-              <div class="content">
-                <header class="align-center">
-                  <h2>Urecka</h2>
-                </header>
-                <p class="event-writeup">
-                  It's all about Innovation In You ! The blocks and tools are
-                  lying ready for you to balance your toppling tower or make
-                  your remote controlled car. <br /><br />
-
-                  As here stands the chance to present your Dream Model in front
-                  of the city to bluster your creative and technical skills.
-                  <br /><br />
-                  The University of Engineering and Management presents Urecka
-                  (Innovative Model Making Competition) in our annual
-                  techno-management fest, URECKON 2020 for you all. Hence to
-                  give a shape to your innovation and grab excitement cash
-                  prizes from us. <br />
-                  Click on the registration link and bang on! <br />
-                </p>
-                <ul class="text-dark">
-                  <li class="mb-2">
-                    <i class="fas fa-phone-volume mr-2"></i>
-                    <span class=""
-                      >Arpan :
-                      <a href="tel:7044196266" class="text-dark"
-                        >+91 70441 96266</a
-                      ></span
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-phone-volume mr-2"></i>
-                    <span class=""
-                      >Chandan :
-                      <a href="tel:9163036910" class="text-dark"
-                        >+91 91630 36910</a
-                      ></span
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-phone-volume mr-2"></i>
-                    <span class=""
-                      >Abhishek :
-                      <a href="tel:8910924144" class="text-dark"
-                        >+91 89109 24144</a
-                      ></span
-                    >
-                  </li>
-                </ul>
-                <footer class="align-center mt-4">
-                  <a
-                    target="_blank"
-                    href="https://ureckon.fra1.digitaloceanspaces.com/1637395290361ClueX.pdf"
-                    class="btn ps-btn btn-lg btn-info"
-                    style="color: #fff"
-                    download
-                    >Problem Statement</a
-                  >
-                  <a
-                    href="#three"
-                    class="btn btn-lg btn-success register-btn"
-                    style="color: #fff"
-                    >Register</a
-                  >
-                </footer>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="box">
-              <div class="image fit">
-                <img src="images/cluex.jpg" height="313" alt="" />
-              </div>
-              <div class="content">
-                <header class="align-center">
-                  <h2>ClueX</h2>
-                </header>
-                <p class="event-writeup cluex-writeup">
-                  "Is Your Gray Matter Ready To Unlock Knowledge At The Speed Of
-                  Thoughts?"<br /><br />
-
-                  Intriguing the spark of knowing the unknown and shaping the
-                  technocrats, the University of Engineering and Management
-                  presents ClueX to you all at it's annual techno-management
-                  fest, URECKON ! <br /><br />
-
-                  Crack through the General Skills Test storming your brain out
-                  of the box followed by the electrifying Quiz Session to make
-                  your Intelligence Quotient count and grab an opportunity to
-                  win exciting prizes from us. So what is the wait for? Here's
-                  the registration link, See you all there! <br />
-                </p>
-                <ul class="text-dark">
-                  <li class="mb-2">
-                    <i class="fas fa-phone-volume mr-2"></i>
-                    <span class=""
-                      >Avinandan :
-                      <a href="tel:8981814735" class="text-dark"
-                        >+91 89818 14735</a
-                      ></span
-                    >
-                  </li>
-                  <li class="mb-2">
-                    <i class="fas fa-phone-volume mr-2"></i>
-                    <span class=""
-                      >Somlina :
-                      <a href="tel:8017424905" class="text-dark"
-                        >+91 80174 24905</a
-                      ></span
-                    >
-                  </li>
-                  <li><br /></li>
-                </ul>
-                <footer class="align-center mt-4">
-                  <a
-                    target="_blank"
-                    href="https://ureckon.fra1.digitaloceanspaces.com/1637395290361ClueX.pdf"
-                    class="btn ps-btn btn-lg btn-info"
-                    style="color: #fff"
-                    download
-                    >Problem Statement</a
-                  >
-                  <a
-                    href="#three"
-                    class="btn btn-lg btn-success register-btn"
-                    style="color: #fff"
-                    >Register</a
-                  >
-                </footer>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="grid-style" id="uoscEvents"></div>
       </div>
     </section>
 
@@ -374,7 +236,7 @@
               <label class="label-input100">Team Name</label>
               <input
                 type="text"
-                name="team"
+                name="teamName"
                 class="form-control input100"
                 id="teamName"
                 placeholder="Enter your Team Name"
@@ -388,7 +250,7 @@
               <label class="label-input100">School Name</label>
               <input
                 type="text"
-                name="school"
+                name="schoolName"
                 class="form-control input100"
                 id="schoolName"
                 placeholder="Enter your School Name"
@@ -398,238 +260,18 @@
             <div class="form-group wrap-input100 validate-input bg1">
               <label class="label-input100">Select Event</label>
               <select
-                name="eventSelector"
+                name="event"
                 class="form-control js-select2 select2-hidden-accessible"
                 tabindex="-1"
                 aria-hidden="true"
                 id="event"
-                onchange="eventSelected(this)"
+                onchange="eventSelected(this.options[this.selectedIndex])"
               >
-                <option value="ps">Please Select</option>
-                <option value="model">Urecka &#40;4 Members&#41;</option>
-                <option value="coding">ClueX &#40;2 Members&#41;</option>
-                <!-- <option value="quiz">UreckQuiz &#40;3 Members&#41;</option> -->
+                <option value="null">Please Select</option>
               </select>
             </div>
-            <div id="member1" class="mt-4">
-              <h5>Member 1 &#40;Team Leader&#41; Details&#58;</h5>
-              <div
-                class="form-group mt-3 wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 1's Name"
-              >
-                <label class="label-input100">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control input100"
-                  id="member1-name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 1's Class"
-              >
-                <label class="label-input100">Class</label>
-                <input
-                  type="text"
-                  name="class"
-                  class="form-control input100"
-                  id="member1-class"
-                  placeholder="Enter your class"
-                  required
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 1's Contact Number"
-              >
-                <label class="label-input100">Contact Number</label>
-                <input
-                  type="text"
-                  name="contactnumber"
-                  class="form-control input100"
-                  id="member1-contact"
-                  placeholder="Enter your contact number"
-                  required
-                />
-              </div>
-            </div>
-            <div id="member2" class="mt-4">
-              <h5>Member 2 Details&#58;</h5>
-              <div
-                class="form-group mt-3 wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 2's Name"
-              >
-                <label class="label-input100">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control input100"
-                  id="member2-name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 2's Class"
-              >
-                <label class="label-input100">Class</label>
-                <input
-                  type="text"
-                  name="class"
-                  class="form-control input100"
-                  id="member2-class"
-                  placeholder="Enter your class"
-                  required
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 2's Contact Number"
-              >
-                <label class="label-input100">Contact Number</label>
-                <input
-                  type="text"
-                  name="contactnumber"
-                  class="form-control input100"
-                  id="member2-contact"
-                  placeholder="Enter your contact number"
-                  required
-                />
-              </div>
-            </div>
-            <div id="member3" class="mt-4">
-              <h5>Member 3 Details&#58;</h5>
-              <div
-                class="form-group mt-3 wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 3's Name"
-              >
-                <label class="label-input100">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control input100"
-                  id="member3-name"
-                  placeholder="Enter your name"
-                  required
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 3's Class"
-              >
-                <label class="label-input100">Class</label>
-                <input
-                  type="text"
-                  name="class"
-                  class="form-control input100"
-                  id="member3-class"
-                  placeholder="Enter your class"
-                  required
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 3's Contact Number"
-              >
-                <label class="label-input100">Contact Number</label>
-                <input
-                  type="text"
-                  name="contactnumber"
-                  class="form-control input100"
-                  id="member3-contact"
-                  placeholder="Enter your contact number"
-                  required
-                />
-              </div>
-            </div>
-            <div id="member4" class="mt-4">
-              <h5>Member 4 Details&#58;</h5>
-              <div
-                class="form-group mt-3 wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 4's Name"
-              >
-                <label class="label-input100">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control input100"
-                  id="member4-name"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 4's Class"
-              >
-                <label class="label-input100">Class</label>
-                <input
-                  type="text"
-                  name="class"
-                  class="form-control input100"
-                  id="member4-class"
-                  placeholder="Enter your class"
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 4's Contact Number"
-              >
-                <label class="label-input100">Contact Number</label>
-                <input
-                  type="text"
-                  name="contactnumber"
-                  class="form-control input100"
-                  id="member4-contact"
-                  placeholder="Enter your contact number"
-                />
-              </div>
-            </div>
-            <!-- <div id="member5" class="mt-4">
-              <h5>Member 5 Details&#58;</h5>
-              <div
-                class="form-group mt-3 wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 5's Name"
-              >
-                <label class="label-input100">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control input100"
-                  id="member5-name"
-                  placeholder="Enter your name"
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 5's Class"
-              >
-                <label class="label-input100">Class</label>
-                <input
-                  type="text"
-                  name="class"
-                  class="form-control input100"
-                  id="member5-class"
-                  placeholder="Enter your class"
-                />
-              </div>
-              <div
-                class="form-group wrap-input100 validate-input bg1"
-                data-validate="Please Enter Member 5's Contact Number"
-              >
-                <label class="label-input100">Contact Number</label>
-                <input
-                  type="text"
-                  name="contactnumber"
-                  class="form-control input100"
-                  id="member5-contact"
-                  placeholder="Enter your contact number"
-                />
-              </div>
-            </div> -->
+
+            <div id="memberDetails" class="w-100"></div>
             <button
               type="submit"
               class="
@@ -805,11 +447,17 @@
         duration: 1000,
       });
     </script>
+
+    <!-- API Script -->
+    <script src="assets/js/api.js"></script>
+    <!-- Event Fetch Script -->
+    <script src="assets/js/eventFetch.js"></script>
+
     <!-- Main Script -->
     <script src="assets/js/main.js"></script>
-    <!-- form Validation script -->
-    <script src="assets/js/validate.js"></script>
     <!-- Registration script -->
     <script src="assets/js/register.js"></script>
+    <!-- form Validation script -->
+    <script src="assets/js/validate.js"></script>
   </body>
 </html>
