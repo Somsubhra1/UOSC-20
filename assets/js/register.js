@@ -1,4 +1,4 @@
-const baseURL = 'https://ureckon-api-dev-spn77.ondigitalocean.app'
+const baseURL = 'https://ureckon-api.uem.edu.in'
 
 var member1 = document.getElementById('member1')
 var member2 = document.getElementById('member2')
