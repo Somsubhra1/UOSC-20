@@ -1,0 +1,1 @@
+const baseURL="https://ureckon.uem.edu.in";
