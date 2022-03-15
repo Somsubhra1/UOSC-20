@@ -1,10 +1,7 @@
-
-const baseURL = 'https://ureckon-api.uem.edu.in'
-
-var member1 = document.getElementById('member1')
-var member2 = document.getElementById('member2')
-var member3 = document.getElementById('member3')
-var member4 = document.getElementById('member4')
+var member1 = document.getElementById("member1");
+var member2 = document.getElementById("member2");
+var member3 = document.getElementById("member3");
+var member4 = document.getElementById("member4");
 
 // var member5 = document.getElementById('member5');
 
